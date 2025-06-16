@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sport Clube Xurumendes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+    }
+    header {
+      background: linear-gradient(90deg, #0f0, #0a0);
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: black;
+    }
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #0f0;
+    }
+    .player {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #333;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sport Clube Xurumendes</h1>
+    <p>Juntos somos fortes, unidos somos Xurumendes</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#elenco">Elenco</a>
+    <a href="#jogos">Jogos</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre o Clube</h2>
+    <p>Fundado em 11/10/2010 por Maycon Kroll, Diego Mendes, Ademilson Mendes (Gu) e Fagner Rodrigo, o Sport Clube Xurumendes é movido pela paixão ao futebol. Nosso mascote é o lobo negro Fumaça.</p>
+  </section>
+
+  <section id="elenco">
+    <h2>Elenco</h2>
+    <div class="player"><span>Maycon Kroll</span><span>Atacante</span></div>
+    <div class="player"><span>Jogador 2</span><span>Meia</span></div>
+  </section>
+
+  <section id="jogos">
+    <h2>Calendário de Jogos</h2>
+    <ul>
+      <li>10/06/2025 - SC Xurumendes 2x1 Adversário FC</li>
+      <li>17/06/2025 - Próximo jogo vs Rival FC</li>
+    </ul>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria de Fotos</h2>
+    <div class="gallery">
+      <img src="img1.jpg" alt="Jogo 1" />
+      <img src="img2.jpg" alt="Treino" />
+    </div>
+    <h3>Vídeos</h3>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required><br><br>
+      <input type="email" name="email" placeholder="Seu e-mail" required><br><br>
+      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea><br><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Sport Clube Xurumendes. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
